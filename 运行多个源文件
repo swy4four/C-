@@ -1,0 +1,27 @@
+  // 文件名  helloword.c
+  /*Input numbers, output the product*/
+#include "print.h"
+int main(void)
+{
+	printInOutPut();
+	return 0;
+}
+
+// 文件名  print.c
+
+#include "print.h"
+void printInOutPut()
+{
+	int x, y, m;						//定义整形变量x，y，m
+	printf("Please input x and y \n");	//输出提示信息
+	scanf_s("%d%d", &x, &y);				//读入两个乘数，赋值给x，y变量
+	m = x * y;							//计算两个乘数的积，赋值给m
+	printf("%d*%d=%d\n", x, y, m);		//输出结果
+}
+
+
+//文件名   print .h
+
+#include "stdio.h"
+/*函数声明*/
+oid printInOutPut(void);

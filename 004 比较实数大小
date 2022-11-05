@@ -6,7 +6,7 @@ int main()
 	int x, y,c;			//变量的定义
 	printf("Please input x and y :\n");  //提示用户输入数据
 	scanf_s("%d%d",&x,&y);  //取地址符不要忘记 
-	c = x > y ? x : y;
-	printf("MAX of (%d,%d) is %d ",x,y,c);
+	c = x > y ? x : y;			/* 计算c=max(x,y) */
+	printf("MAX of (%d,%d) is %d ",x,y,c);	 /* 输出c */
 	return 0;
 }

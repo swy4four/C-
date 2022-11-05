@@ -1,1 +1,12 @@
 # C-
+/*输入两个浮点数，输出它们中的大数*/
+#include <stdio.h>
+int main()
+{
+	float x, y,c;			//变量的定义
+	printf("Please input x and y :\n");  //提示用户输入数据
+	scanf_s("%d%d",&x,&y);  //取地址符不要忘记 
+	c = x > y ? x : y;
+	printf("MAX of (%f,%f) is %f ",x,y,c);
+	return 0;
+}

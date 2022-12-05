@@ -24,4 +24,4 @@ void printInOutPut()
 
 #include "stdio.h"
 /*函数声明*/
-oid printInOutPut(void);
+void prvintInOutPut(void);

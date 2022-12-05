@@ -1,0 +1,23 @@
+// demo_01.c
+ #include"demo_03.h"
+int main()
+{
+	Enterword();
+	return 0;
+}
+//demo_02.c
+#include"demo_03.h"
+void Enterword()
+{
+	int a, b, c, max;
+	while (printf("Enter three numbers;") != EOF) {
+		scanf_s("%d%d%d", &a, &b, &c);
+		max = a > b ? a : b;
+		max = max > c ? max : c;
+		printf("MAX:");
+		printf("%d\n", max);
+	}
+}
+//demo_03.h
+#include"stdio.h"
+void Enterword(void);

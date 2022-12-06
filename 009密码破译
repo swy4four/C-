@@ -1,0 +1,15 @@
+# C_code_store
+//2022.12.6
+/*密破译ascII*/
+#include <stdio.h>
+int main()
+{
+	int ch1;
+	char ch[5];
+	for (ch1 = 0; ch1 < 5; ch1++) {
+		scanf_s("%c",&ch[ch1]);
+		ch[ch1] += 4;
+	}
+	printf("%x", ch); 
+		return 0;
+}

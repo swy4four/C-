@@ -1,0 +1,24 @@
+# C_code_store
+//2022.12.7
+/*递归问题->推演求母牛数量 */
+/*有一头母牛，它每年年初生一头小母牛。
+每头小母牛从第四个年头开始，每年年初也生一头小母牛。
+请编程实现在第n年的时候，共有多少头母牛？*/
+//     |n, n<=3;
+//f(n)|
+//     |f(n-1)+f(n-3), n>3;
+#include <stdio.h>
+int fun(int year)
+{
+    if (year <= 3)return year;
+    else return fun(year - 1) + fun(year - 3);
+}
+int main()
+{
+    int year;
+    while (printf("输入年份:")){
+           scanf_s("%d",&year);
+           printf("母牛数量:%d\n",fun(year));
+}
+    return 0;
+}

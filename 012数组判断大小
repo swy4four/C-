@@ -1,0 +1,38 @@
+# C_code_store
+//012. 2022.12.10
+/*判断大小*/
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[3] = {1,2,3};
+//	int largest,loop;
+//	largest = arr[0];
+//	for (loop = 1; loop < 3; loop++) {
+//		if (largest < arr[loop])
+//			largest = arr[loop];
+//	}
+//	printf("max number = %d",largest);
+//	return 0;
+//}
+
+//自定义 输入 比较大小
+#include <stdio.h>
+int main()
+{
+	int arr[100];
+	int loop, num;
+	printf("please enter the number of elements:");
+	scanf_s("%d",&num);
+//receive user input 
+	for (loop = 0; loop < num; ++loop) {
+		printf("enter a num %d :",loop+1);
+		scanf_s("%d",&arr[loop]);
+	}
+//circulate
+	for (loop = 1; loop < num; ++loop) {
+		if (arr[0] < arr[loop])
+			arr[0] = arr[loop];
+	}
+	printf("max number = %d ",arr[0]);
+	return 0;
+}

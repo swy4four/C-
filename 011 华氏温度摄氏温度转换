@@ -1,0 +1,15 @@
+# C_code_store
+//2022.1210
+/*华氏温度与摄氏温度的转换*/
+//公式为 c = 5*(F - 32) / 9，取位2小数。
+#include<stdio.h>
+int main()
+{
+	float  F, C;
+	//int C =( 5*(F - 32) )/ 9;
+	while (printf("请输入华氏温度=")) {
+		scanf_s("%f",&F);
+		printf("转化为摄氏度=%0.2f\n",C = (5 * (F - 32)) / 9);
+	}
+	return 0;
+}

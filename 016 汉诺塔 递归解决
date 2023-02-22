@@ -1,0 +1,23 @@
+/*汉诺塔*/
+#include<stdio.h>
+
+void move(char start, char end, int n) {
+	printf("第%d个圆盘：%c --> %c\n", n, start, end);
+}
+
+//a存放圆盘的初始柱子，b作为中间商存放使用，c作为目标柱子，n表示要从a移动到c的圆盘数
+void hanoi(char a, char b, char c, int n) {
+	if (n == 1) {
+		move(a, c, n);
+	}else {
+		hanoi(a, c, b, n - 1);
+		move(a, c, n);
+		hanoi(b, a, c, n - 1);
+	}
+}
+
+int main() {
+	hanoi('A', 'B', 'C', 3); 
+}
+
+//函数调用 谨记

@@ -1,0 +1,14 @@
+/*01 递归操作 求某数的阶乘*/
+#include<stdio.h>
+
+int test(int n);
+
+int main(){
+	printf("%d",test(7));
+}
+int test(int n) {
+	
+	if (n == 1) return 1;
+	return test(n - 1) * n;
+
+}

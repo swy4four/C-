@@ -1,0 +1,16 @@
+# C_code_store
+/*015 斐波那契数列*/
+
+#include <stdio.h>
+int fib(int n) {
+	if (n == 1 || n == 2) return 1;
+	return fib(n - 1) + fib(n - 2); 
+}
+/*
+斐波那契数列指的是这样一个数列：1，1，2，3，5，8，13，21，34，55，89
+这个数列从第3项开始，每一项都等于前两项之和
+*/
+
+int main(){
+	printf("%d", fib(5));
+}
